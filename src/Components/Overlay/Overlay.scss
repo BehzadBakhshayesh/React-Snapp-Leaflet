@@ -1,0 +1,50 @@
+$color1: #07df70;
+$color2: #404040;
+$color3: #0f81ff;
+$color4: #f8f8f8;
+$color5: #ff4340;
+
+
+.Overlay{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2000;
+    background-color: rgba($color: #000000, $alpha: 0.2);
+    .whiteContainer{
+        width: 100%;
+        height: 30%;
+        background-color: #fff;
+        border-radius: 10px 10px 0 0;
+        padding: 20px;
+        position: absolute;
+        bottom: 0;
+        animation: active ease 0.25s 1;
+        h1{
+            font-weight: bold;
+            color: #444;
+        }
+        p{
+            font-size: 1.3rem;
+            color: #444;
+        }
+        .buttonsContainer{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            div{
+                flex-basis: 50%;
+                margin: 0 5px;
+            }
+        }
+    }
+    
+}
+@keyframes active{
+    from{transform: translateY(100%);}
+    to{ transform: translateY(0)}
+}

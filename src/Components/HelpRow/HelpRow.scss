@@ -1,0 +1,31 @@
+$color1: #07df70;
+$color2: #404040;
+$color3: #0f81ff;
+$color4: #f8f8f8;
+$color5: #ff4340;
+
+.HelpRow {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  .iconContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 60px;
+    height: 50px;
+    margin-left: 10px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: $color3;
+    img {
+      width: 25px;
+      height: 25px;
+    }
+  }
+  .textContainer {
+    font-size: 1.6rem;
+    color: $color2;
+  }
+}

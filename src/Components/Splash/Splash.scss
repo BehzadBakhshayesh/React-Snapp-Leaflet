@@ -1,0 +1,58 @@
+$color1: #07df70;
+$color2: #404040;
+$color3: #0f81ff;
+$color4: #f8f8f8;
+$color5: #ff4340;
+
+.Splash {
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  .circle {
+    width: 25px;
+    height: 25px;
+    margin: 5px;
+    border-radius: 50%;
+    background-color: #bbb;
+    animation: splash 0.7s infinite;
+  }
+  .c1 {
+    animation-delay: 0s;
+  }
+  .c2 {
+    animation-delay: 0.35s;
+  }
+   
+}
+
+@keyframes splash {
+  0% {
+    opacity: 0.4;
+    transform: scale(0.9, 0.9);
+  }
+  25% {
+    opacity: 0.5;
+    transform: scale(1.1, 1.1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2, 1.2);
+  }
+  75% {
+    opacity: 0.5;
+    transform: scale(1.1, 1.1);
+  }
+  100% {
+    opacity: 0.4;
+    transform: scale(0.9, 0.9);
+  }
+}

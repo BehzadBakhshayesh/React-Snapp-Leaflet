@@ -1,0 +1,67 @@
+$color1: #07df70;
+$color2: #404040;
+$color3: #0f81ff;
+$color4: #f8f8f8;
+$color5: #ff4340;
+
+.ToggleSwitch {
+  width: 180px;
+  height: 40px;
+  border-radius: 25px;
+  background-color: #fff;
+  padding:2px;
+  position: relative;
+  z-index: 200;
+  font-size: 1.4rem;
+  box-shadow: 2px 3px 5px 0 rgba(221, 221, 221, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.09);
+  .textContent {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    color: #aaa;
+    font-weight: bold;
+    display: flex;
+    .forMyself {
+      flex-basis: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .forOthers {
+      flex-basis: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .circle {
+    width: 50%;
+    height: 90%;
+    background-color: $color1;
+    color: #fff;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 2px;
+    bottom: 2px;
+    z-index: 210;
+    border-radius: 25px;
+    transition:all ease 0.15s;
+  }
+  .checkbox {
+    width: 100%;
+    height: 90%;
+    border-radius: 25px;
+    opacity: 0;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 220;
+  }
+  .active{
+    transform: translateX(-96%);
+  }
+}

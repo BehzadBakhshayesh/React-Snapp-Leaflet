@@ -1,0 +1,19 @@
+$color1: #07df70;
+$color2: #404040;
+$color3: #0f81ff;
+$color4: #f8f8f8;
+$color5: #ff4340;
+
+.CircleButton{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 2px 3px 5px 0 rgba(221, 221, 221, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.09);
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img{
+      width: 25px;
+  }
+}

@@ -1,0 +1,27 @@
+$color1: #07df70;
+$color2: #404040;
+$color3: #0f81ff;
+$color4: #f8f8f8;
+$color5: #ff4340;
+
+.Input {
+  width: 100%;
+  position: relative;
+  label {
+    display: block;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  input {
+    width: 100%;
+    font-size: 1.5rem;
+    display: block;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    &:focus {
+      background-color: #fff;
+    }
+  }
+}

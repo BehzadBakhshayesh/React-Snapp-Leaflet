@@ -1,0 +1,17 @@
+$color1: #07df70;
+$color2: #404040;
+$color3: #0f81ff;
+$color4: #f8f8f8;
+$color5: #ff4340;
+
+.Resend {
+  display: flex;
+  .txt {
+    color: $color1;
+    font-size: 1.3rem;
+  }
+  .iconContainer {
+    width: 20px;
+    height: 20px;
+  }
+}

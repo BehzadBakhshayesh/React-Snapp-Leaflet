@@ -1,0 +1,87 @@
+$color1: #07df70;
+$color2: #404040;
+$color3: #0f81ff;
+$color4: #f8f8f8;
+$color5: #ff4340;
+
+.AddWebAppToPhone {
+  width: 100%;
+  height: 100vh;
+  padding: 20px;
+  .logoRow {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    .logoContainer {
+      max-width: 50px;
+      border-radius: 5px;
+      display: flex;
+      img {
+        border-radius: 5px;
+      }
+    }
+  }
+
+  .titleContainer {
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    h1 {
+      text-align: center;
+      font-size: 1.6rem;
+      font-weight: bold;
+      color: $color2;
+    }
+  }
+  .hr {
+    width: 100%;
+    height: 1px;
+    background-color: $color4;
+    margin-bottom: 20px;
+  }
+  .helpContainer {
+    width: 100%;
+  }
+  .buttonContainer {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .AddWebAppToPhone {
+    .logoRow {
+      .logoContainer {
+        margin: 70px 0 10px;
+      }
+    }
+    .buttonContainer {
+      margin-top: 50px;
+    }
+  }
+}
+@media only screen and (min-width: 300px) {
+  .AddWebAppToPhone {
+    .logoRow {
+      .logoContainer {
+        margin: 30px 0 10px;
+      }
+    }
+    .buttonContainer {
+      margin-top: 40px;
+    }
+  }
+}
+@media only screen and (min-width: 360px) {
+  .AddWebAppToPhone {
+    .logoRow {
+      .logoContainer {
+        margin: 70px 0 10px;
+      }
+    }
+    .buttonContainer {
+      margin-top: 100px;
+    }
+  }
+}
