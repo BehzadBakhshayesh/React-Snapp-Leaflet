@@ -156,7 +156,7 @@ const Verify = () => {
                 </div>
             </div>
             <>
-                {home && <Redirect to='/map' />}
+                {home && <Redirect to='/home' />}
                 {!phoneNumber && < Redirect to='/login' />}
             </>
 
